@@ -206,6 +206,13 @@
 <hole x="-11.8" y="4.24" drill="3.048"/>
 <hole x="11.8" y="4.24" drill="3.048"/>
 <text x="-2.54" y="5.08" size="1.27" layer="21">&gt;NAME</text>
+<polygon width="0.127" layer="41">
+<vertex x="-5.930903125" y="0.862109375"/>
+<vertex x="5.913509375" y="0.862109375"/>
+<vertex x="5.913509375" y="-0.827278125"/>
+<vertex x="-5.929725" y="-0.827278125"/>
+<vertex x="-5.929725" y="0.861165625"/>
+</polygon>
 </package>
 <package name="RGBLED">
 <smd name="P$1" x="1.4" y="-0.725" dx="1.2" dy="0.9" layer="1"/>
@@ -492,16 +499,16 @@ P40- VIN</text>
 <text x="-10.16" y="2.54" size="1.778" layer="97">B</text>
 </symbol>
 <symbol name="52745-1097">
-<pin name="P$1" x="-12.7" y="5.08" length="middle" rot="R270"/>
-<pin name="P$2" x="-10.16" y="5.08" length="middle" rot="R270"/>
-<pin name="P$3" x="-7.62" y="5.08" length="middle" rot="R270"/>
-<pin name="P$4" x="-5.08" y="5.08" length="middle" rot="R270"/>
-<pin name="P$5" x="-2.54" y="5.08" length="middle" rot="R270"/>
-<pin name="P$6" x="0" y="5.08" length="middle" rot="R270"/>
-<pin name="P$7" x="2.54" y="5.08" length="middle" rot="R270"/>
-<pin name="P$8" x="5.08" y="5.08" length="middle" rot="R270"/>
-<pin name="P$9" x="7.62" y="5.08" length="middle" rot="R270"/>
-<pin name="P$10" x="10.16" y="5.08" length="middle" rot="R270"/>
+<pin name="SCLK" x="-12.7" y="5.08" length="middle" rot="R270"/>
+<pin name="SI" x="-10.16" y="5.08" length="middle" rot="R270"/>
+<pin name="SCS" x="-7.62" y="5.08" length="middle" rot="R270"/>
+<pin name="EXCOMIN" x="-5.08" y="5.08" length="middle" rot="R270"/>
+<pin name="DISP" x="-2.54" y="5.08" length="middle" rot="R270"/>
+<pin name="VDDA" x="0" y="5.08" length="middle" rot="R270"/>
+<pin name="VDD" x="2.54" y="5.08" length="middle" rot="R270"/>
+<pin name="EXTMODE" x="5.08" y="5.08" length="middle" rot="R270"/>
+<pin name="VSS" x="7.62" y="5.08" length="middle" rot="R270"/>
+<pin name="VSSA" x="10.16" y="5.08" length="middle" rot="R270"/>
 <wire x1="-15.24" y1="2.54" x2="-15.24" y2="-2.54" width="0.254" layer="97"/>
 <wire x1="-15.24" y1="-2.54" x2="-22.86" y2="-2.54" width="0.254" layer="97"/>
 <wire x1="-22.86" y1="-2.54" x2="-22.86" y2="-12.7" width="0.254" layer="97"/>
@@ -661,16 +668,16 @@ P40- VIN</text>
 <devices>
 <device name="" package="52745-1097">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$10" pad="P$10"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
-<connect gate="G$1" pin="P$4" pad="P$4"/>
-<connect gate="G$1" pin="P$5" pad="P$5"/>
-<connect gate="G$1" pin="P$6" pad="P$6"/>
-<connect gate="G$1" pin="P$7" pad="P$7"/>
-<connect gate="G$1" pin="P$8" pad="P$8"/>
-<connect gate="G$1" pin="P$9" pad="P$9"/>
+<connect gate="G$1" pin="DISP" pad="P$5"/>
+<connect gate="G$1" pin="EXCOMIN" pad="P$4"/>
+<connect gate="G$1" pin="EXTMODE" pad="P$8"/>
+<connect gate="G$1" pin="SCLK" pad="P$1"/>
+<connect gate="G$1" pin="SCS" pad="P$3"/>
+<connect gate="G$1" pin="SI" pad="P$2"/>
+<connect gate="G$1" pin="VDD" pad="P$7"/>
+<connect gate="G$1" pin="VDDA" pad="P$6"/>
+<connect gate="G$1" pin="VSS" pad="P$9"/>
+<connect gate="G$1" pin="VSSA" pad="P$10"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2339,10 +2346,10 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <wire x1="-317.5" y1="180.34" x2="-317.5" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$10"/>
+<pinref part="U$2" gate="G$1" pin="VSSA"/>
 <wire x1="-55.88" y1="154.94" x2="-60.96" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="154.94" x2="-60.96" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P$9"/>
+<pinref part="U$2" gate="G$1" pin="VSS"/>
 <wire x1="-60.96" y1="152.4" x2="-55.88" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="154.94" x2="-60.96" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="2"/>
@@ -2470,7 +2477,7 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <wire x1="-355.6" y1="182.88" x2="-355.6" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$5"/>
+<pinref part="U$2" gate="G$1" pin="DISP"/>
 <wire x1="-55.88" y1="142.24" x2="-71.12" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="142.24" x2="-76.2" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="142.24" x2="-83.82" y2="142.24" width="0.1524" layer="91"/>
@@ -2478,11 +2485,11 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <wire x1="-91.44" y1="142.24" x2="-96.52" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="142.24" x2="-96.52" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="1"/>
-<pinref part="U$2" gate="G$1" pin="P$7"/>
+<pinref part="U$2" gate="G$1" pin="VDD"/>
 <wire x1="-55.88" y1="147.32" x2="-68.58" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="147.32" x2="-71.12" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="147.32" x2="-71.12" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P$6"/>
+<pinref part="U$2" gate="G$1" pin="VDDA"/>
 <wire x1="-71.12" y1="144.78" x2="-55.88" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="144.78" x2="-71.12" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U$17" gate="G$1" pin="1"/>
@@ -2704,7 +2711,7 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <pinref part="U$10" gate="G$1" pin="PTC6/LLWU_P10/CMP0_IN0/SPI0_SOUT/PDB0_EXTRG/I2S0_RX_BCLK/I2S0_MCLK"/>
 <wire x1="-160.02" y1="124.46" x2="-96.52" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="124.46" x2="-96.52" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P$2"/>
+<pinref part="U$2" gate="G$1" pin="SI"/>
 <wire x1="-96.52" y1="134.62" x2="-55.88" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2713,7 +2720,7 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <pinref part="U$10" gate="G$1" pin="PTC5/LLWU_P8/SPI0_PCS0/UART1_TX/FTM0_CH3/CMP1_OUT"/>
 <wire x1="-160.02" y1="121.92" x2="-93.98" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="121.92" x2="-93.98" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P$1"/>
+<pinref part="U$2" gate="G$1" pin="SCLK"/>
 <wire x1="-93.98" y1="132.08" x2="-55.88" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2722,20 +2729,20 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <pinref part="U$10" gate="G$1" pin="PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/FTM0_CH3/CMP1_OUT"/>
 <wire x1="-160.02" y1="119.38" x2="-101.6" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="-101.6" y1="119.38" x2="-101.6" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P$3"/>
+<pinref part="U$2" gate="G$1" pin="SCS"/>
 <wire x1="-101.6" y1="137.16" x2="-55.88" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="2">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$8"/>
+<pinref part="U$2" gate="G$1" pin="EXTMODE"/>
 <pinref part="U$6" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="149.86" x2="-68.58" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="2">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$4"/>
+<pinref part="U$2" gate="G$1" pin="EXCOMIN"/>
 <pinref part="U$25" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="139.7" x2="-104.14" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="139.7" x2="-104.14" y2="142.24" width="0.1524" layer="91"/>
