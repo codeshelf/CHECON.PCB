@@ -148,8 +148,14 @@
 <pad name="P$1" x="0" y="0" drill="3.6"/>
 <wire x1="13.7" y1="4.7" x2="13.7" y2="-4.3" width="0.127" layer="21"/>
 <wire x1="13.7" y1="-4.3" x2="-0.7" y2="-4.3" width="0.127" layer="21"/>
-<wire x1="-0.7" y1="-4.3" x2="-0.7" y2="4.7" width="0.127" layer="21"/>
-<wire x1="-0.7" y1="4.7" x2="13.7" y2="4.7" width="0.127" layer="21"/>
+<text x="7.62" y="5.08" size="1.27" layer="21">&gt;NAME</text>
+<wire x1="-0.692234375" y1="4.718846875" x2="0.721321875" y2="4.718846875" width="0.127" layer="21"/>
+<wire x1="13.7175125" y1="4.707925" x2="5.32376875" y2="4.707925" width="0.127" layer="21"/>
+<wire x1="5.32376875" y1="4.707925" x2="5.32376875" y2="4.71303125" width="0.127" layer="21"/>
+<wire x1="-0.6980125" y1="-4.30889375" x2="-0.692140625" y2="-4.30889375" width="0.127" layer="21"/>
+<wire x1="-0.692140625" y1="-4.30889375" x2="-0.692140625" y2="-2.577965625" width="0.127" layer="21"/>
+<wire x1="-0.684121875" y1="4.714909375" x2="-0.691103125" y2="4.714909375" width="0.127" layer="21"/>
+<wire x1="-0.691103125" y1="4.714909375" x2="-0.691103125" y2="2.472709375" width="0.127" layer="21"/>
 </package>
 <package name="DF12_F">
 <hole x="-5.8" y="1.5" drill="0.6"/>
@@ -199,17 +205,18 @@
 <smd name="P$40" x="4.75" y="-2.3" dx="2.6" dy="0.3" layer="1" rot="R90"/>
 <hole x="-11.8" y="4.24" drill="3.048"/>
 <hole x="11.8" y="4.24" drill="3.048"/>
+<text x="-2.54" y="5.08" size="1.27" layer="21">&gt;NAME</text>
 </package>
 <package name="RGBLED">
 <smd name="P$1" x="1.4" y="-0.725" dx="1.2" dy="0.9" layer="1"/>
-<smd name="P$2" x="-1.4" y="-0.725" dx="1.2" dy="0.9" layer="1"/>
+<smd name="P$4" x="-1.4" y="-0.725" dx="1.2" dy="0.9" layer="1"/>
 <smd name="P$3" x="-1.4" y="0.725" dx="1.2" dy="0.9" layer="1"/>
-<smd name="P$4" x="1.4" y="0.725" dx="1.2" dy="0.9" layer="1"/>
+<smd name="P$2" x="1.4" y="0.725" dx="1.2" dy="0.9" layer="1"/>
 <circle x="3.1" y="-1.7" radius="0.5" width="0" layer="21"/>
 <wire x1="-1.6" y1="1.4" x2="1.6" y2="1.4" width="0.1524" layer="21"/>
 <wire x1="-1.6" y1="-1.4" x2="0.95" y2="-1.4" width="0.1524" layer="21"/>
-<wire x1="-1.6" y1="0.1" x2="-1.6" y2="-0.1" width="0.1524" layer="21"/>
-<wire x1="1.6" y1="0.1" x2="1.6" y2="-0.1" width="0.1524" layer="21"/>
+<wire x1="-1.599259375" y1="0.08963125" x2="-1.6" y2="-0.088890625" width="0.1524" layer="21"/>
+<wire x1="1.6" y1="0.088446875" x2="1.6" y2="-0.0911125" width="0.1524" layer="21"/>
 <wire x1="1.6" y1="-0.9" x2="1.2" y2="-1.3" width="0.15" layer="51"/>
 <hole x="2.0193" y="2.0447" drill="0.6096"/>
 <hole x="-2.0193" y="-2.0447" drill="0.6096"/>
@@ -317,6 +324,14 @@
 <wire x1="-1.227384375" y1="-3.15549375" x2="-1.227384375" y2="-2.567875" width="0.127" layer="21"/>
 <wire x1="-1.227384375" y1="-2.567875" x2="-0.041890625" y2="-2.567875" width="0.127" layer="21"/>
 <wire x1="-0.041890625" y1="-2.567875" x2="-0.041890625" y2="-3.166903125" width="0.127" layer="21"/>
+<text x="-3.81" y="-5.08" size="1.27" layer="21">&gt;NAME</text>
+</package>
+<package name="RA_BUTTON">
+<pad name="P$2" x="2.25" y="0" drill="0.99"/>
+<pad name="P$1" x="-2.25" y="0" drill="0.99"/>
+<hole x="-3.5005" y="2.49" drill="1.3"/>
+<hole x="3.5005" y="2.49" drill="1.3"/>
+<text x="-2.54" y="-2.54" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -535,6 +550,17 @@ P40- VIN</text>
 <wire x1="6.096" y1="0" x2="6.096" y2="2.54" width="0.254" layer="104"/>
 <wire x1="6.096" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="104"/>
 </symbol>
+<symbol name="RA_BUTTON">
+<wire x1="2.54" y1="7.62" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="3.81" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="7.62" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<text x="5.08" y="7.62" size="1.27" layer="95" rot="R270">&gt;Name</text>
+<pin name="1" x="0" y="0" length="short" direction="in" rot="R90"/>
+<pin name="2" x="-2.54" y="0" length="short" direction="in" rot="R90"/>
+<wire x1="3.81" y1="5.842" x2="3.81" y2="4.318" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BARREL_CUI_PJ-002A">
@@ -686,6 +712,22 @@ P40- VIN</text>
 </device>
 </devices>
 </deviceset>
+<deviceset name="RA_BUTTON">
+<gates>
+<gate name="G$1" symbol="RA_BUTTON" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="RA_BUTTON">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="GW-devices">
@@ -721,14 +763,12 @@ P40- VIN</text>
 <smd name="P$3" x="-1.91" y="10.225" dx="6.35" dy="0.76" layer="1" rot="R90"/>
 <smd name="P$2" x="-3.18" y="10.225" dx="6.35" dy="0.76" layer="1" rot="R90"/>
 <smd name="P$1" x="-4.45" y="10.225" dx="6.35" dy="0.76" layer="1" rot="R90"/>
-<wire x1="-7.62" y1="-7.94" x2="-7.62" y2="10.16" width="0.127" layer="39"/>
-<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.127" layer="39"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="-7.94" width="0.127" layer="39"/>
-<wire x1="7.62" y1="-7.94" x2="-7.62" y2="-7.94" width="0.127" layer="39"/>
-<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.127" layer="21"/>
 <wire x1="7.62" y1="10.16" x2="7.62" y2="-7.94" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.94" x2="-7.62" y2="-7.94" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="-7.94" x2="-7.62" y2="10.16" width="0.127" layer="21"/>
+<wire x1="7.620421875" y1="10.15975" x2="5.056875" y2="10.15813125" width="0.127" layer="21"/>
+<wire x1="-7.619525" y1="10.159375" x2="-5.07129375" y2="10.159375" width="0.127" layer="21"/>
+<text x="10.16" y="-1.27" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 </package>
 <package name="DIL06">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -804,17 +844,6 @@ P40- VIN</text>
 <smd name="4" x="3.975" y="-2.25" dx="1.55" dy="1.3" layer="1"/>
 <smd name="3" x="-3.975" y="-2.25" dx="1.55" dy="1.3" layer="1"/>
 <text x="-3.6" y="3.9" size="1.6764" layer="25">&gt;Name</text>
-</package>
-<package name="SWITCH-TACTILE-320.01E11WHT">
-<wire x1="-6.2" y1="6.2" x2="6.2" y2="6.2" width="0.127" layer="21"/>
-<wire x1="6.2" y1="6.2" x2="6.2" y2="-6.2" width="0.127" layer="21"/>
-<wire x1="6.2" y1="-6.2" x2="-6.2" y2="-6.2" width="0.127" layer="21"/>
-<wire x1="-6.2" y1="-6.2" x2="-6.2" y2="6.2" width="0.127" layer="21"/>
-<pad name="P$1" x="-3.81" y="-3.81" drill="1.22"/>
-<pad name="P$3" x="1.27" y="1.27" drill="1.22"/>
-<pad name="P$2" x="-1.27" y="3.81" drill="1.22"/>
-<pad name="P$4" x="3.81" y="-3.81" drill="1.22"/>
-<text x="-3.3" y="6.9" size="1.27" layer="25">&gt;Name</text>
 </package>
 <package name="SWITCH-TACTILE-FSM">
 <wire x1="-3" y1="3" x2="3" y2="3" width="0.127" layer="21"/>
@@ -919,11 +948,11 @@ type 0207, grid 7.5 mm</description>
 <package name="SO14">
 <description>&lt;b&gt;14-Lead Narrow-Body SOIC&lt;/b&gt; (SO-14)&lt;p&gt;
 Source: http://www.analog.com/static/imported-files/data_sheets/SSM2166.pdf</description>
-<wire x1="4.305" y1="1.9" x2="4.305" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="4.305" y1="-1.4" x2="4.305" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="4.359190625" y1="1.938728125" x2="4.359190625" y2="-1.361271875" width="0.2032" layer="21"/>
+<wire x1="4.359190625" y1="-1.361271875" x2="4.3589625" y2="-1.898503125" width="0.2032" layer="21"/>
 <wire x1="4.305" y1="-1.9" x2="-4.305" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-4.305" y1="-1.9" x2="-4.305" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="-4.305" y1="-1.4" x2="-4.305" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-4.351465625" y1="-1.904496875" x2="-4.350146875" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-4.350146875" y1="-1.4" x2="-4.350146875" y2="1.9" width="0.2032" layer="21"/>
 <wire x1="-4.305" y1="1.9" x2="4.305" y2="1.9" width="0.2032" layer="51"/>
 <wire x1="4.305" y1="-1.4" x2="-4.305" y2="-1.4" width="0.2032" layer="51"/>
 <smd name="2" x="-2.54" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
@@ -1024,7 +1053,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <wire x1="1.1" y1="0.5" x2="1.1" y2="-0.5" width="0.2032" layer="21"/>
 <wire x1="1.1" y1="-0.5" x2="-1.1" y2="-0.5" width="0.2032" layer="51"/>
 <wire x1="-1.1" y1="-0.5" x2="-1.1" y2="0.5" width="0.2032" layer="21"/>
-<circle x="-0.65" y="-0.2" radius="0.15" width="0" layer="21"/>
+<circle x="-0.639384375" y="-0.158703125" radius="0.15" width="0" layer="21"/>
 <smd name="1" x="-0.65" y="-0.85" dx="0.35" dy="0.8" layer="1"/>
 <smd name="2" x="0" y="-0.85" dx="0.35" dy="0.8" layer="1"/>
 <smd name="3" x="0.65" y="-0.85" dx="0.35" dy="0.8" layer="1"/>
@@ -1039,6 +1068,17 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
 <rectangle x1="-0.15" y1="0.6" x2="0.15" y2="1.1" layer="51"/>
 <rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
+</package>
+<package name="SWITCH-TACTILE-320.01E11WHT">
+<wire x1="-6.2" y1="6.2" x2="6.2" y2="6.2" width="0.127" layer="21"/>
+<wire x1="6.2" y1="6.2" x2="6.2" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="6.2" y1="-6.2" x2="-6.2" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="-6.2" x2="-6.2" y2="6.2" width="0.127" layer="21"/>
+<pad name="P$1" x="-3.81" y="-3.81" drill="1.22"/>
+<pad name="P$3" x="1.27" y="1.27" drill="1.22" thermals="no"/>
+<pad name="P$2" x="-1.27" y="3.81" drill="1.22"/>
+<pad name="P$4" x="3.81" y="-3.81" drill="1.22" thermals="no"/>
+<text x="-3.3" y="6.9" size="1.27" layer="25">&gt;Name</text>
 </package>
 </packages>
 <symbols>
@@ -1821,17 +1861,39 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 </class>
 </classes>
 <parts>
-<part name="U$9" library="KW2" deviceset="BARREL_CUI_PJ-002A" device=""/>
-<part name="U$10" library="KW2" deviceset="DF12_F" device=""/>
-<part name="POSCON" library="GW-devices" deviceset="RJ45-8" device=""/>
-<part name="SCANNER" library="GW-devices" deviceset="RJ45-8" device=""/>
-<part name="U$13" library="GW-devices" deviceset="SWITCH-TACTILE" device=""/>
-<part name="U$14" library="GW-devices" deviceset="SWITCH-TACTILE" device=""/>
-<part name="U$15" library="GW-devices" deviceset="SWITCH-TACTILE" device=""/>
-<part name="U$16" library="GW-devices" deviceset="SWITCH-TACTILE" device=""/>
-<part name="U$1" library="KW2" deviceset="RGLBED" device=""/>
-<part name="U$2" library="KW2" deviceset="52745-1097" device=""/>
-<part name="U$3" library="KW2" deviceset="2X10JTAG" device=""/>
+<part name="U$9" library="KW2" deviceset="BARREL_CUI_PJ-002A" device="">
+<attribute name="MFGP" value="PJ-002A"/>
+</part>
+<part name="U$10" library="KW2" deviceset="DF12_F" device="">
+<attribute name="MFGP" value="DF12(3.0)-40DP-0.5V(86)"/>
+</part>
+<part name="POSCON" library="GW-devices" deviceset="RJ45-8" device="">
+<attribute name="MFGP" value="0955016889"/>
+</part>
+<part name="SCANNER" library="GW-devices" deviceset="RJ45-8" device="">
+<attribute name="MFGP" value="0955016889"/>
+</part>
+<part name="U$13" library="GW-devices" deviceset="SWITCH-TACTILE" device="">
+<attribute name="MFGP" value="TL3301DF260QG"/>
+</part>
+<part name="U$14" library="GW-devices" deviceset="SWITCH-TACTILE" device="">
+<attribute name="MFGP" value="TL3301DF260QG"/>
+</part>
+<part name="U$15" library="GW-devices" deviceset="SWITCH-TACTILE" device="">
+<attribute name="MFGP" value="TL3301DF260QG"/>
+</part>
+<part name="U$16" library="GW-devices" deviceset="SWITCH-TACTILE" device="">
+<attribute name="MFGP" value="TL3301DF260QG"/>
+</part>
+<part name="U$1" library="KW2" deviceset="RGLBED" device="">
+<attribute name="MFGP" value="CLV1A-FKB-CK1N1G1BB7R4S3"/>
+</part>
+<part name="U$2" library="KW2" deviceset="52745-1097" device="">
+<attribute name="MFGP" value="52745-1097"/>
+</part>
+<part name="U$3" library="KW2" deviceset="2X10JTAG" device="">
+<attribute name="MFGP" value="3220-20-0100-00"/>
+</part>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="V+" device=""/>
@@ -1839,12 +1901,20 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$8" library="GW-devices" deviceset="WS2801" device=""/>
+<part name="U$8" library="GW-devices" deviceset="WS2801" device="">
+<attribute name="MFGP" value="WS2801"/>
+</part>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$18" library="GW-devices" deviceset="RF-R" device="0805"/>
-<part name="U$19" library="GW-devices" deviceset="RF-R" device="0805"/>
-<part name="U$20" library="GW-devices" deviceset="RF-R" device="0805"/>
+<part name="U$18" library="GW-devices" deviceset="RF-R" device="0805">
+<attribute name="MFGP" value="CRCW080524R0JNEA"/>
+</part>
+<part name="U$19" library="GW-devices" deviceset="RF-R" device="0805">
+<attribute name="MFGP" value="CRCW080524R0JNEA"/>
+</part>
+<part name="U$20" library="GW-devices" deviceset="RF-R" device="0805">
+<attribute name="MFGP" value="CRCW080524R0JNEA"/>
+</part>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="U3" library="SparkFun" deviceset="RS485" device="SOIC">
 <attribute name="MFGN" value="TI"/>
@@ -1868,41 +1938,100 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <part name="SUPPLY3" library="supply2" deviceset="V+" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="U$11" library="GW-devices" deviceset="RF-C" device="0805"/>
-<part name="U$12" library="GW-devices" deviceset="RF-C" device="0805"/>
-<part name="U$21" library="GW-devices" deviceset="RF-C" device="0805"/>
-<part name="U$22" library="GW-devices" deviceset="RF-C" device="0805"/>
-<part name="U$23" library="GW-devices" deviceset="RF-C" device="0805"/>
-<part name="U$6" library="GW-devices" deviceset="RF-R" device="0805"/>
+<part name="U$11" library="GW-devices" deviceset="RF-C" device="0805">
+<attribute name="MFGP" value="0805YD105KAT2A"/>
+</part>
+<part name="U$12" library="GW-devices" deviceset="RF-C" device="0805">
+<attribute name="MFGP" value="0805YD105KAT2A"/>
+</part>
+<part name="U$21" library="GW-devices" deviceset="RF-C" device="0805">
+<attribute name="MFGP" value="0805YD105KAT2A"/>
+</part>
+<part name="U$22" library="GW-devices" deviceset="RF-C" device="0805">
+<attribute name="MFGP" value="0805YD105KAT2A"/>
+</part>
+<part name="U$23" library="GW-devices" deviceset="RF-C" device="0805">
+<attribute name="MFGP" value="0805YD105KAT2A"/>
+</part>
+<part name="U$6" library="GW-devices" deviceset="RF-R" device="0805">
+<attribute name="MFGP" value="CRCW080510K0FKEB"/>
+</part>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$7" library="GW-devices" deviceset="RF-C" device="0805"/>
-<part name="U$17" library="GW-devices" deviceset="RF-C" device="0805"/>
-<part name="U$24" library="GW-devices" deviceset="RF-C" device="0805"/>
-<part name="U$25" library="GW-devices" deviceset="RF-R" device="0805"/>
-<part name="U$26" library="GW-devices" deviceset="RF-R" device="0805"/>
-<part name="U$27" library="GW-devices" deviceset="RF-R" device="0805"/>
-<part name="U$28" library="GW-devices" deviceset="RF-R" device="0805"/>
-<part name="U$29" library="GW-devices" deviceset="RF-R" device="0805"/>
+<part name="U$7" library="GW-devices" deviceset="RF-C" device="0805">
+<attribute name="MFGP" value="C0805C106M4PACTU"/>
+</part>
+<part name="U$17" library="GW-devices" deviceset="RF-C" device="0805">
+<attribute name="MFGP" value="0805YD105KAT2A"/>
+</part>
+<part name="U$24" library="GW-devices" deviceset="RF-C" device="0805">
+<attribute name="MFGP" value="0805YD104KAT2A"/>
+</part>
+<part name="U$25" library="GW-devices" deviceset="RF-R" device="0805">
+<attribute name="MFGP" value="CRCW080510K0FKEB"/>
+</part>
+<part name="U$26" library="GW-devices" deviceset="RF-R" device="0805">
+<attribute name="MFGP" value="CRCW080510K0FKEB"/>
+</part>
+<part name="U$27" library="GW-devices" deviceset="RF-R" device="0805">
+<attribute name="MFGP" value="CRCW080510K0FKEB"/>
+</part>
+<part name="U$28" library="GW-devices" deviceset="RF-R" device="0805">
+<attribute name="MFGP" value="CRCW080510K0FKEB"/>
+</part>
+<part name="U$29" library="GW-devices" deviceset="RF-R" device="0805">
+<attribute name="MFGP" value="CRCW080510K0FKEB"/>
+</part>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="U$30" library="KW2" deviceset="RA_BUTTON" device="">
+<attribute name="MFGP" value="1-1825027-1"/>
+</part>
+<part name="U$31" library="GW-devices" deviceset="RF-R" device="0805">
+<attribute name="MFGP" value="CRCW080510K0FKEB"/>
+</part>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY6" library="supply2" deviceset="V+" device=""/>
+<part name="SUPPLY5" library="supply2" deviceset="V+" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$9" gate="G$1" x="-127" y="144.78" rot="R180"/>
-<instance part="U$10" gate="G$1" x="-175.26" y="116.84"/>
-<instance part="POSCON" gate="G$1" x="-281.94" y="58.42"/>
-<instance part="SCANNER" gate="G$1" x="-307.34" y="154.94"/>
-<instance part="U$13" gate="G$1" x="-281.94" y="170.18"/>
-<instance part="U$14" gate="G$1" x="-271.78" y="157.48"/>
-<instance part="U$15" gate="G$1" x="-261.62" y="144.78"/>
-<instance part="U$16" gate="G$1" x="-248.92" y="132.08"/>
-<instance part="U$1" gate="G$1" x="-259.08" y="218.44" rot="R180"/>
-<instance part="U$2" gate="G$1" x="-50.8" y="144.78" rot="R90"/>
-<instance part="U$3" gate="G$1" x="-127" y="99.06" rot="MR180"/>
+<instance part="U$9" gate="G$1" x="-127" y="144.78" rot="R180">
+<attribute name="MFGP" x="-127" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U$10" gate="G$1" x="-175.26" y="116.84">
+<attribute name="MFGP" x="-175.26" y="116.84" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="POSCON" gate="G$1" x="-281.94" y="58.42">
+<attribute name="MFGP" x="-281.94" y="58.42" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SCANNER" gate="G$1" x="-307.34" y="154.94">
+<attribute name="MFGP" x="-307.34" y="154.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$13" gate="G$1" x="-281.94" y="170.18">
+<attribute name="MFGP" x="-281.94" y="170.18" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$14" gate="G$1" x="-271.78" y="157.48">
+<attribute name="MFGP" x="-271.78" y="157.48" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$15" gate="G$1" x="-261.62" y="144.78">
+<attribute name="MFGP" x="-261.62" y="144.78" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$16" gate="G$1" x="-248.92" y="132.08">
+<attribute name="MFGP" x="-248.92" y="132.08" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$1" gate="G$1" x="-259.08" y="218.44" rot="R180">
+<attribute name="MFGP" x="-259.08" y="218.44" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U$2" gate="G$1" x="-50.8" y="144.78" rot="R90">
+<attribute name="MFGP" x="-50.8" y="144.78" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$3" gate="G$1" x="-127" y="99.06" rot="MR180">
+<attribute name="MFGP" x="-127" y="99.06" size="1.778" layer="96" rot="MR180" display="off"/>
+</instance>
 <instance part="+3V7" gate="G$1" x="-104.14" y="114.3"/>
 <instance part="GND3" gate="1" x="-142.24" y="149.86"/>
 <instance part="SUPPLY1" gate="1" x="-152.4" y="154.94"/>
@@ -1910,12 +2039,20 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <instance part="GND7" gate="1" x="-149.86" y="86.36"/>
 <instance part="GND1" gate="1" x="-208.28" y="86.36"/>
 <instance part="+3V5" gate="G$1" x="-271.78" y="228.6"/>
-<instance part="U$8" gate="G$1" x="-198.12" y="205.74" rot="R180"/>
+<instance part="U$8" gate="G$1" x="-198.12" y="205.74" rot="R180">
+<attribute name="MFGP" x="-198.12" y="205.74" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="GND2" gate="1" x="-162.56" y="226.06"/>
 <instance part="+3V6" gate="G$1" x="-220.98" y="198.12"/>
-<instance part="U$18" gate="G$1" x="-175.26" y="215.9"/>
-<instance part="U$19" gate="G$1" x="-175.26" y="210.82"/>
-<instance part="U$20" gate="G$1" x="-175.26" y="205.74"/>
+<instance part="U$18" gate="G$1" x="-175.26" y="215.9">
+<attribute name="MFGP" x="-175.26" y="215.9" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$19" gate="G$1" x="-175.26" y="210.82">
+<attribute name="MFGP" x="-175.26" y="210.82" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$20" gate="G$1" x="-175.26" y="205.74">
+<attribute name="MFGP" x="-175.26" y="205.74" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND4" gate="1" x="-299.72" y="45.72"/>
 <instance part="U3" gate="G$1" x="-335.28" y="60.96">
 <attribute name="MFGN" x="-335.28" y="60.96" size="1.778" layer="96" display="off"/>
@@ -1939,24 +2076,61 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <instance part="SUPPLY3" gate="1" x="-355.6" y="190.5"/>
 <instance part="GND11" gate="1" x="-355.6" y="172.72"/>
 <instance part="GND12" gate="1" x="-317.5" y="172.72"/>
-<instance part="U$11" gate="G$1" x="-434.34" y="165.1" rot="R90"/>
-<instance part="U$12" gate="G$1" x="-434.34" y="154.94" rot="R90"/>
-<instance part="U$21" gate="G$1" x="-378.46" y="180.34" rot="R90"/>
-<instance part="U$22" gate="G$1" x="-378.46" y="167.64" rot="R90"/>
-<instance part="U$23" gate="G$1" x="-378.46" y="162.56" rot="R90"/>
-<instance part="U$6" gate="G$1" x="-68.58" y="154.94" rot="R90"/>
+<instance part="U$11" gate="G$1" x="-434.34" y="165.1" rot="R90">
+<attribute name="MFGP" x="-434.34" y="165.1" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$12" gate="G$1" x="-434.34" y="154.94" rot="R90">
+<attribute name="MFGP" x="-434.34" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$21" gate="G$1" x="-378.46" y="180.34" rot="R90">
+<attribute name="MFGP" x="-378.46" y="180.34" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$22" gate="G$1" x="-378.46" y="167.64" rot="R90">
+<attribute name="MFGP" x="-378.46" y="167.64" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$23" gate="G$1" x="-378.46" y="162.56" rot="R90">
+<attribute name="MFGP" x="-378.46" y="162.56" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$6" gate="G$1" x="-68.58" y="154.94" rot="R90">
+<attribute name="MFGP" x="-68.58" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND13" gate="1" x="-78.74" y="165.1"/>
-<instance part="+3V2" gate="G$1" x="-96.52" y="152.4"/>
-<instance part="U$7" gate="G$1" x="-91.44" y="144.78" rot="R180"/>
-<instance part="U$17" gate="G$1" x="-83.82" y="144.78" rot="R180"/>
-<instance part="U$24" gate="G$1" x="-76.2" y="144.78" rot="R180"/>
-<instance part="U$25" gate="G$1" x="-104.14" y="147.32" rot="R90"/>
-<instance part="U$26" gate="G$1" x="-241.3" y="182.88" rot="R90"/>
-<instance part="U$27" gate="G$1" x="-248.92" y="182.88" rot="R90"/>
-<instance part="U$28" gate="G$1" x="-256.54" y="182.88" rot="R90"/>
-<instance part="U$29" gate="G$1" x="-264.16" y="182.88" rot="R90"/>
+<instance part="U$7" gate="G$1" x="-91.44" y="144.78" rot="R180">
+<attribute name="MFGP" x="-91.44" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U$17" gate="G$1" x="-83.82" y="144.78" rot="R180">
+<attribute name="MFGP" x="-83.82" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U$24" gate="G$1" x="-76.2" y="144.78" rot="R180">
+<attribute name="MFGP" x="-76.2" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U$25" gate="G$1" x="-104.14" y="147.32" rot="R90">
+<attribute name="MFGP" x="-104.14" y="147.32" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$26" gate="G$1" x="-241.3" y="182.88" rot="R90">
+<attribute name="MFGP" x="-241.3" y="182.88" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$27" gate="G$1" x="-248.92" y="182.88" rot="R90">
+<attribute name="MFGP" x="-248.92" y="182.88" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$28" gate="G$1" x="-256.54" y="182.88" rot="R90">
+<attribute name="MFGP" x="-256.54" y="182.88" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$29" gate="G$1" x="-264.16" y="182.88" rot="R90">
+<attribute name="MFGP" x="-264.16" y="182.88" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="+3V3" gate="G$1" x="-254" y="195.58"/>
 <instance part="GND14" gate="1" x="-294.64" y="124.46"/>
+<instance part="GND15" gate="1" x="-106.68" y="83.82"/>
+<instance part="U$30" gate="G$1" x="-220.98" y="162.56" rot="MR0">
+<attribute name="MFGP" x="-220.98" y="162.56" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
+<instance part="U$31" gate="G$1" x="-231.14" y="182.88" rot="R90">
+<attribute name="MFGP" x="-231.14" y="182.88" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="GND16" gate="1" x="-226.06" y="160.02"/>
+<instance part="SUPPLY6" gate="1" x="-96.52" y="152.4"/>
+<instance part="SUPPLY5" gate="1" x="-314.96" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -2001,31 +2175,6 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <wire x1="-160.02" y1="99.06" x2="-139.7" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="P$3"/>
-<wire x1="-114.3" y1="106.68" x2="-106.68" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="106.68" x2="-106.68" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$5"/>
-<wire x1="-106.68" y1="104.14" x2="-114.3" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="104.14" x2="-106.68" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$9"/>
-<wire x1="-106.68" y1="99.06" x2="-114.3" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="99.06" x2="-106.68" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$15"/>
-<wire x1="-106.68" y1="91.44" x2="-114.3" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="91.44" x2="-106.68" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$17"/>
-<wire x1="-106.68" y1="88.9" x2="-114.3" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="88.9" x2="-106.68" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$19"/>
-<wire x1="-106.68" y1="86.36" x2="-114.3" y2="86.36" width="0.1524" layer="91"/>
-<junction x="-106.68" y="91.44"/>
-<junction x="-106.68" y="88.9"/>
-<junction x="-106.68" y="104.14"/>
-<junction x="-106.68" y="99.06"/>
-</segment>
-</net>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
@@ -2044,41 +2193,10 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <junction x="-195.58" y="142.24"/>
 </segment>
 <segment>
-<wire x1="-269.24" y1="218.44" x2="-271.78" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="+3V5" gate="G$1" pin="+3V3"/>
-<wire x1="-271.78" y1="218.44" x2="-271.78" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="ANODE"/>
-</segment>
-<segment>
 <pinref part="U$8" gate="G$1" pin="VCC"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 <wire x1="-210.82" y1="190.5" x2="-220.98" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="-220.98" y1="190.5" x2="-220.98" y2="195.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="P$5"/>
-<pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="-55.88" y1="142.24" x2="-71.12" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="142.24" x2="-76.2" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="142.24" x2="-83.82" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="142.24" x2="-91.44" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-91.44" y1="142.24" x2="-96.52" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="142.24" x2="-96.52" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="1"/>
-<pinref part="U$2" gate="G$1" pin="P$7"/>
-<wire x1="-55.88" y1="147.32" x2="-68.58" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="147.32" x2="-71.12" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="147.32" x2="-71.12" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P$6"/>
-<wire x1="-71.12" y1="144.78" x2="-55.88" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="144.78" x2="-71.12" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="U$17" gate="G$1" pin="1"/>
-<pinref part="U$24" gate="G$1" pin="1"/>
-<junction x="-71.12" y="144.78"/>
-<junction x="-83.82" y="142.24"/>
-<junction x="-91.44" y="142.24"/>
-<junction x="-76.2" y="142.24"/>
-<junction x="-71.12" y="142.24"/>
 </segment>
 <segment>
 <pinref part="U$29" gate="G$1" pin="2"/>
@@ -2097,6 +2215,15 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <junction x="-248.92" y="190.5"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="-254" y1="193.04" x2="-254" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="U$31" gate="G$1" pin="2"/>
+<wire x1="-241.3" y1="190.5" x2="-231.14" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="-231.14" y1="190.5" x2="-231.14" y2="187.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="ANODE"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+<wire x1="-269.24" y1="218.44" x2="-271.78" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="-271.78" y1="218.44" x2="-271.78" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="2">
@@ -2277,6 +2404,35 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <junction x="-294.64" y="132.08"/>
 <junction x="-294.64" y="129.54"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$3"/>
+<wire x1="-114.3" y1="106.68" x2="-106.68" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="106.68" x2="-106.68" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$5"/>
+<wire x1="-106.68" y1="104.14" x2="-114.3" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="104.14" x2="-106.68" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$9"/>
+<wire x1="-106.68" y1="99.06" x2="-114.3" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="99.06" x2="-106.68" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$15"/>
+<wire x1="-106.68" y1="91.44" x2="-114.3" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="91.44" x2="-106.68" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$17"/>
+<wire x1="-106.68" y1="88.9" x2="-114.3" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="88.9" x2="-106.68" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$19"/>
+<wire x1="-106.68" y1="86.36" x2="-114.3" y2="86.36" width="0.1524" layer="91"/>
+<junction x="-106.68" y="91.44"/>
+<junction x="-106.68" y="88.9"/>
+<junction x="-106.68" y="104.14"/>
+<junction x="-106.68" y="99.06"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND16" gate="1" pin="GND"/>
+<pinref part="U$30" gate="G$1" pin="1"/>
+<wire x1="-226.06" y1="162.56" x2="-220.98" y2="162.56" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="V+" class="0">
 <segment>
@@ -2313,36 +2469,36 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <wire x1="-350.52" y1="182.88" x2="-355.6" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="-355.6" y1="182.88" x2="-355.6" y2="187.96" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$5" class="0">
 <segment>
-<wire x1="-243.84" y1="226.06" x2="-231.14" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GREEN"/>
-<wire x1="-220.98" y1="226.06" x2="-213.36" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="-213.36" y1="226.06" x2="-213.36" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="GOUT"/>
-<wire x1="-213.36" y1="215.9" x2="-210.82" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="-231.14" y1="226.06" x2="-220.98" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P$5"/>
+<wire x1="-55.88" y1="142.24" x2="-71.12" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="142.24" x2="-76.2" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="142.24" x2="-83.82" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="142.24" x2="-91.44" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="142.24" x2="-96.52" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="142.24" x2="-96.52" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="1"/>
+<pinref part="U$2" gate="G$1" pin="P$7"/>
+<wire x1="-55.88" y1="147.32" x2="-68.58" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="147.32" x2="-71.12" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="147.32" x2="-71.12" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P$6"/>
+<wire x1="-71.12" y1="144.78" x2="-55.88" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="144.78" x2="-71.12" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="1"/>
+<pinref part="U$24" gate="G$1" pin="1"/>
+<junction x="-71.12" y="144.78"/>
+<junction x="-83.82" y="142.24"/>
+<junction x="-91.44" y="142.24"/>
+<junction x="-76.2" y="142.24"/>
+<junction x="-71.12" y="142.24"/>
+<pinref part="SUPPLY6" gate="1" pin="V+"/>
 </segment>
-</net>
-<net name="N$8" class="0">
 <segment>
-<wire x1="-243.84" y1="218.44" x2="-231.14" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="BLUE"/>
-<wire x1="-220.98" y1="218.44" x2="-218.44" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="-218.44" y1="218.44" x2="-218.44" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="BOUT"/>
-<wire x1="-218.44" y1="220.98" x2="-210.82" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="-231.14" y1="218.44" x2="-220.98" y2="218.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<wire x1="-243.84" y1="210.82" x2="-231.14" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="RED"/>
-<pinref part="U$8" gate="G$1" pin="ROUT"/>
-<wire x1="-220.98" y1="210.82" x2="-210.82" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="-231.14" y1="210.82" x2="-220.98" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VCC"/>
+<wire x1="-314.96" y1="68.58" x2="-314.96" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-314.96" y1="63.5" x2="-320.04" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="1" pin="V+"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -2454,10 +2610,6 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <pinref part="POSCON" gate="G$1" pin="8"/>
 <wire x1="-294.64" y1="50.8" x2="-302.26" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-302.26" y1="50.8" x2="-302.26" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="VCC"/>
-<wire x1="-320.04" y1="63.5" x2="-309.88" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="63.5" x2="-309.88" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="68.58" x2="-302.26" y2="68.58" width="0.1524" layer="91"/>
 <junction x="-302.26" y="68.58"/>
 <pinref part="U$5" gate="G$1" pin="VOUT"/>
 <wire x1="-302.26" y1="81.28" x2="-302.26" y2="71.12" width="0.1524" layer="91"/>
@@ -2591,8 +2743,6 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 </net>
 <net name="N$34" class="0">
 <segment>
-<pinref part="U$16" gate="G$1" pin="3"/>
-<wire x1="-243.84" y1="132.08" x2="-241.3" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-241.3" y1="132.08" x2="-241.3" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$10" gate="G$1" pin="PTE2/LLWU_P1/MADC0_DP1/SPI1_SCK/!UART1_CTS!/MTRACE_D2"/>
 <wire x1="-241.3" y1="129.54" x2="-241.3" y2="121.92" width="0.1524" layer="91"/>
@@ -2607,8 +2757,6 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="U$15" gate="G$1" pin="3"/>
-<wire x1="-256.54" y1="144.78" x2="-248.92" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-248.92" y1="144.78" x2="-238.76" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-238.76" y1="144.78" x2="-238.76" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U$10" gate="G$1" pin="PTE3/MADC0_DM1/SPI1_SIN/!UART1_RTS!/MTRACE_D1/SPI1_SOUT"/>
@@ -2627,11 +2775,9 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <pinref part="U$10" gate="G$1" pin="PTE4/LLWU_P2/SPI1_PCS0/MTRACE_D0"/>
 <wire x1="-190.5" y1="127" x2="-236.22" y2="127" width="0.1524" layer="91"/>
 <wire x1="-236.22" y1="127" x2="-236.22" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="U$14" gate="G$1" pin="3"/>
 <wire x1="-236.22" y1="154.94" x2="-236.22" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="-236.22" y1="157.48" x2="-256.54" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U$14" gate="G$1" pin="4"/>
-<wire x1="-256.54" y1="157.48" x2="-266.7" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="-266.7" y1="154.94" x2="-236.22" y2="154.94" width="0.1524" layer="91"/>
 <junction x="-236.22" y="154.94"/>
 <pinref part="U$28" gate="G$1" pin="1"/>
@@ -2644,11 +2790,9 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <pinref part="U$10" gate="G$1" pin="PTE16/ADC0_SE4A/SPI0_PCS0/UART2_TX/FTM_CLKIN0/FTM0_FLT3"/>
 <wire x1="-190.5" y1="129.54" x2="-233.68" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="-233.68" y1="129.54" x2="-233.68" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="U$13" gate="G$1" pin="3"/>
 <wire x1="-233.68" y1="167.64" x2="-233.68" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="-233.68" y1="170.18" x2="-264.16" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="U$13" gate="G$1" pin="4"/>
-<wire x1="-264.16" y1="170.18" x2="-276.86" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="-276.86" y1="167.64" x2="-233.68" y2="167.64" width="0.1524" layer="91"/>
 <junction x="-233.68" y="167.64"/>
 <pinref part="U$29" gate="G$1" pin="1"/>
@@ -2671,6 +2815,43 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <wire x1="-299.72" y1="182.88" x2="-299.72" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="U$10" gate="G$1" pin="PTD5/ADC0_SE6B/SPI0_PCS2/!UART0_CTS!/!UART0_COL!/FTM0_CH5/!EWM_OUT"/>
 <wire x1="-299.72" y1="109.22" x2="-190.5" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$10" gate="G$1" pin="PTE17/ADC0_SE5A/SPI0_SCK/UART2_RX/FTM_CLKIN1/LPTMR0_ALT3"/>
+<wire x1="-190.5" y1="132.08" x2="-218.44" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-218.44" y1="132.08" x2="-218.44" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U$31" gate="G$1" pin="1"/>
+<wire x1="-231.14" y1="177.8" x2="-231.14" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="-231.14" y1="154.94" x2="-218.44" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U$30" gate="G$1" pin="2"/>
+<wire x1="-218.44" y1="154.94" x2="-218.44" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<wire x1="-226.06" y1="226.06" x2="-226.06" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="GOUT"/>
+<wire x1="-226.06" y1="215.9" x2="-210.82" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GREEN"/>
+<wire x1="-243.84" y1="226.06" x2="-226.06" y2="226.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<wire x1="-231.14" y1="218.44" x2="-231.14" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="BOUT"/>
+<wire x1="-231.14" y1="220.98" x2="-210.82" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="BLUE"/>
+<wire x1="-231.14" y1="218.44" x2="-243.84" y2="218.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="RED"/>
+<pinref part="U$8" gate="G$1" pin="ROUT"/>
+<wire x1="-243.84" y1="210.82" x2="-210.82" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
