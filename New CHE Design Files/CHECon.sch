@@ -2001,7 +2001,7 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <sheets>
 <sheet>
 <plain>
-<text x="-218.44" y="55.88" size="3.81" layer="97">P2: Fixed LED, reset switch, scanner RTS, flipped FPC pinout</text>
+<text x="-218.44" y="55.88" size="3.81" layer="97">P3: Adjusted traces to use 0.4mm tool, need to add level shifter</text>
 </plain>
 <instances>
 <instance part="U$9" gate="G$1" x="-127" y="144.78" rot="R180">
