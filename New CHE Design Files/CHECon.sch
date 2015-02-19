@@ -2091,7 +2091,6 @@ Production Part - 8199
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="GW-devices" deviceset="MIC94061" device="C6"/>
 <part name="U$5" library="GW-devices" deviceset="MIC94061" device="C6"/>
-<part name="SUPPLY2" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="V+" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
@@ -2174,11 +2173,12 @@ Production Part - 8199
 <attribute name="MFGP" value="CRCW080510K0FKEB"/>
 </part>
 <part name="U$37" library="SparkFun" deviceset="DIODE-ZENER" device="-BZT52"/>
+<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-233.68" y="60.96" size="6.4516" layer="97">P3</text>
+<text x="-233.68" y="60.96" size="6.4516" layer="97">P4</text>
 </plain>
 <instances>
 <instance part="U$9" gate="G$1" x="-127" y="144.78" rot="R180">
@@ -2249,7 +2249,6 @@ Production Part - 8199
 <instance part="GND8" gate="1" x="-406.4" y="127"/>
 <instance part="U$4" gate="G$1" x="-337.82" y="180.34" rot="R180"/>
 <instance part="U$5" gate="G$1" x="-317.5" y="83.82" rot="R180"/>
-<instance part="SUPPLY2" gate="1" x="-406.4" y="187.96"/>
 <instance part="SUPPLY4" gate="1" x="-335.28" y="93.98"/>
 <instance part="GND9" gate="1" x="-335.28" y="78.74"/>
 <instance part="GND10" gate="1" x="-294.64" y="78.74"/>
@@ -2332,6 +2331,7 @@ Production Part - 8199
 <attribute name="MFGP" x="-147.32" y="182.88" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="U$37" gate="G$1" x="-152.4" y="177.8" rot="R90"/>
+<instance part="+3V2" gate="G$1" x="-406.4" y="187.96"/>
 </instances>
 <busses>
 </busses>
@@ -2429,6 +2429,15 @@ Production Part - 8199
 <wire x1="-152.4" y1="182.88" x2="-167.64" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="-167.64" y1="182.88" x2="-167.64" y2="170.18" width="0.1524" layer="91"/>
 <junction x="-152.4" y="182.88"/>
+</segment>
+<segment>
+<wire x1="-406.4" y1="185.42" x2="-406.4" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="-406.4" y1="180.34" x2="-406.4" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="-381" y1="180.34" x2="-406.4" y2="180.34" width="0.1524" layer="91"/>
+<junction x="-406.4" y="180.34"/>
+<pinref part="U2" gate="G$1" pin="VCC"/>
+<pinref part="U$21" gate="G$1" pin="1"/>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="GND" class="2">
@@ -2696,15 +2705,6 @@ Production Part - 8199
 <wire x1="-101.6" y1="190.5" x2="-111.76" y2="190.5" width="0.1524" layer="91"/>
 <junction x="-111.76" y="190.5"/>
 <wire x1="-144.78" y1="172.72" x2="-127" y2="172.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="-406.4" y1="185.42" x2="-406.4" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="-406.4" y1="180.34" x2="-406.4" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="-381" y1="180.34" x2="-406.4" y2="180.34" width="0.1524" layer="91"/>
-<junction x="-406.4" y="180.34"/>
-<pinref part="U2" gate="G$1" pin="VCC"/>
-<pinref part="SUPPLY2" gate="1" pin="V+"/>
-<pinref part="U$21" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="1" pin="V+"/>
