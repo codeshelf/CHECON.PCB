@@ -3075,8 +3075,9 @@ Production Part - 8199
 <pinref part="U$4" gate="G$1" pin="EN"/>
 <wire x1="-322.58" y1="182.88" x2="-299.72" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="-299.72" y1="182.88" x2="-299.72" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="PTD5/ADC0_SE6B/SPI0_PCS2/!UART0_CTS!/!UART0_COL!/FTM0_CH5/!EWM_OUT"/>
-<wire x1="-299.72" y1="109.22" x2="-190.5" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U$10" gate="G$1" pin="PTD3/SPI0_SIN/UART2_TX/I2C0_SCL/GPIO5_BSM_CLK"/>
+<wire x1="-190.5" y1="104.14" x2="-299.72" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-299.72" y1="104.14" x2="-299.72" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
