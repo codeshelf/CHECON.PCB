@@ -218,7 +218,7 @@
 <wire x1="15" y1="-42.56" x2="-15" y2="-42.56" width="0.127" layer="49"/>
 <wire x1="-15" y1="-42.56" x2="-15" y2="7.44" width="0.127" layer="49"/>
 </package>
-<package name="RGBLED">
+<package name="PLCC4_SMALL">
 <smd name="P$1" x="1.4" y="-0.725" dx="1.2" dy="0.9" layer="1"/>
 <smd name="P$4" x="-1.4" y="-0.725" dx="1.2" dy="0.9" layer="1"/>
 <smd name="P$3" x="-1.4" y="0.725" dx="1.2" dy="0.9" layer="1"/>
@@ -233,17 +233,17 @@
 <hole x="-2.0193" y="-2.0447" drill="0.6096"/>
 <text x="-6.35" y="2.54" size="1.27" layer="21">&gt;NAME</text>
 </package>
-<package name="52745-1097">
-<smd name="P$10" x="-2.25" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$9" x="-1.75" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$8" x="-1.25" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$7" x="-0.75" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$6" x="-0.25" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$5" x="0.25" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$4" x="0.75" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$3" x="1.25" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$2" x="1.75" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$1" x="2.25" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
+<package name="FPC">
+<smd name="P$1" x="-2.25" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$2" x="-1.75" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$3" x="-1.25" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$4" x="-0.75" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$5" x="-0.25" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$6" x="0.25" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$7" x="0.75" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$8" x="1.25" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$9" x="1.75" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$10" x="2.25" y="0.95" dx="1.5" dy="0.3" layer="1" rot="R90"/>
 <polygon width="0.05" layer="1">
 <vertex x="3.5" y="0"/>
 <vertex x="5.9" y="0"/>
@@ -304,8 +304,26 @@
 <vertex x="2.7" y="-1.94"/>
 <vertex x="3.4" y="-1.94"/>
 </polygon>
-<circle x="3.41416875" y="2.32630625" radius="0.26063125" width="0" layer="21"/>
+<circle x="-3.193884375" y="1.844440625" radius="0.26063125" width="0" layer="21"/>
 <text x="-2.54" y="2.54" size="1.27" layer="21">&gt;NAME</text>
+<polygon width="0.05" layer="29">
+<vertex x="-3.4" y="-0.6"/>
+<vertex x="-2.7" y="-0.6"/>
+<vertex x="-2.7" y="-1.94"/>
+<vertex x="-3.4" y="-1.94"/>
+</polygon>
+<polygon width="0.05" layer="41">
+<vertex x="-3.4" y="-0.6"/>
+<vertex x="-2.7" y="-0.6"/>
+<vertex x="-2.7" y="-1.94"/>
+<vertex x="-3.4" y="-1.94"/>
+</polygon>
+<polygon width="0.05" layer="41">
+<vertex x="3.4" y="-0.6"/>
+<vertex x="2.7" y="-0.6"/>
+<vertex x="2.7" y="-1.94"/>
+<vertex x="3.4" y="-1.94"/>
+</polygon>
 </package>
 <package name="2X10JTAG">
 <pad name="P$1" x="-6.35" y="-1.27" drill="0.7" diameter="1" shape="square"/>
@@ -694,7 +712,7 @@ P40- VIN</text>
 <gate name="G$1" symbol="RGBLED" x="2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="RGBLED">
+<device name="" package="PLCC4_SMALL">
 <connects>
 <connect gate="G$1" pin="ANODE" pad="P$2"/>
 <connect gate="G$1" pin="BLUE" pad="P$3"/>
@@ -715,18 +733,18 @@ P40- VIN</text>
 <gate name="G$1" symbol="52745-1097" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="52745-1097">
+<device name="" package="FPC">
 <connects>
-<connect gate="G$1" pin="DISP" pad="P$5"/>
-<connect gate="G$1" pin="EXCOMIN" pad="P$4"/>
-<connect gate="G$1" pin="EXTMODE" pad="P$8"/>
-<connect gate="G$1" pin="SCLK" pad="P$1"/>
-<connect gate="G$1" pin="SCS" pad="P$3"/>
-<connect gate="G$1" pin="SI" pad="P$2"/>
-<connect gate="G$1" pin="VDD" pad="P$7"/>
-<connect gate="G$1" pin="VDDA" pad="P$6"/>
-<connect gate="G$1" pin="VSS" pad="P$9"/>
-<connect gate="G$1" pin="VSSA" pad="P$10"/>
+<connect gate="G$1" pin="DISP" pad="P$6"/>
+<connect gate="G$1" pin="EXCOMIN" pad="P$7"/>
+<connect gate="G$1" pin="EXTMODE" pad="P$3"/>
+<connect gate="G$1" pin="SCLK" pad="P$10"/>
+<connect gate="G$1" pin="SCS" pad="P$8"/>
+<connect gate="G$1" pin="SI" pad="P$9"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+<connect gate="G$1" pin="VDDA" pad="P$5"/>
+<connect gate="G$1" pin="VSS" pad="P$2"/>
+<connect gate="G$1" pin="VSSA" pad="P$1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -839,7 +857,7 @@ P40- VIN</text>
 <hole x="-5.715" y="0" drill="3.2"/>
 <hole x="5.715" y="0" drill="3.2"/>
 </package>
-<package name="MOLEX-0955016649">
+<package name="RJ45_SMD">
 <hole x="-5.715" y="0" drill="3.25"/>
 <hole x="5.715" y="0" drill="3.25"/>
 <smd name="P$6" x="1.905" y="10.225" dx="6.35" dy="0.76" layer="1" rot="R90"/>
@@ -856,6 +874,7 @@ P40- VIN</text>
 <wire x1="7.620421875" y1="10.15975" x2="5.056875" y2="10.15813125" width="0.127" layer="21"/>
 <wire x1="-7.619525" y1="10.159375" x2="-5.07129375" y2="10.159375" width="0.127" layer="21"/>
 <text x="10.16" y="-1.27" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+<circle x="-5.924515625" y="12.242059375" radius="0.381" width="0" layer="21"/>
 </package>
 <package name="DIL06">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -953,6 +972,7 @@ P40- VIN</text>
 <smd name="4" x="4.61" y="-2.25" dx="2.5" dy="1.3" layer="1"/>
 <smd name="3" x="-4.61" y="-2.25" dx="2.5" dy="1.3" layer="1"/>
 <text x="-3.6" y="3.9" size="1.6764" layer="25">&gt;Name</text>
+<circle x="-4.96650625" y="0.873459375" radius="0.508" width="0" layer="21"/>
 </package>
 <package name="RF-R0402">
 <wire x1="-0.5" y1="0.25" x2="-0.5" y2="-0.25" width="0.127" layer="51"/>
@@ -1072,7 +1092,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/SSM2166.pdf</des
 <rectangle x1="-1.5151" y1="2" x2="-1.0249" y2="3.1001" layer="51"/>
 <rectangle x1="-2.7851" y1="2" x2="-2.2949" y2="3.1001" layer="51"/>
 <rectangle x1="-4.0551" y1="2" x2="-3.5649" y2="3.1001" layer="51"/>
-<circle x="-3.6" y="-0.8" radius="0.412309375" width="0.127" layer="21"/>
+<circle x="-5.05725" y="-2.825546875" radius="0.412309375" width="0" layer="21"/>
 </package>
 <package name="C0402">
 <wire x1="-0.5" y1="0.25" x2="-0.5" y2="-0.25" width="0.127" layer="51"/>
@@ -1140,7 +1160,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <wire x1="1.1" y1="0.5" x2="1.1" y2="-0.5" width="0.2032" layer="21"/>
 <wire x1="1.1" y1="-0.5" x2="-1.1" y2="-0.5" width="0.2032" layer="51"/>
 <wire x1="-1.1" y1="-0.5" x2="-1.1" y2="0.5" width="0.2032" layer="21"/>
-<circle x="-0.639384375" y="-0.158703125" radius="0.15" width="0" layer="21"/>
+<circle x="-1.26003125" y="-1.0621875" radius="0.15" width="0" layer="21"/>
 <smd name="1" x="-0.65" y="-0.85" dx="0.35" dy="0.8" layer="1"/>
 <smd name="2" x="0" y="-0.85" dx="0.35" dy="0.8" layer="1"/>
 <smd name="3" x="0.65" y="-0.85" dx="0.35" dy="0.8" layer="1"/>
@@ -1280,7 +1300,7 @@ MFG part number 54602-908lf</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="MOLEX-0955016649">
+<device name="" package="RJ45_SMD">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -1676,7 +1696,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="2.423859375" y1="-1.803" x2="2.423859375" y2="1.803" width="0.1524" layer="21"/>
 <wire x1="2.362" y1="1.803" x2="-2.362" y2="1.803" width="0.1524" layer="51"/>
 <wire x1="-2.413371875" y1="1.803" x2="-2.413371875" y2="-1.803" width="0.1524" layer="21"/>
-<circle x="-1.8034" y="-0.9906" radius="0.1436" width="0.2032" layer="21"/>
+<circle x="-2.9672875" y="-2.877234375" radius="0.381" width="0" layer="21"/>
 <smd name="1" x="-1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
 <smd name="2" x="-0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
 <smd name="3" x="0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
@@ -1741,6 +1761,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <rectangle x1="1.651" y1="2.286" x2="2.159" y2="3.302" layer="51"/>
 <rectangle x1="2.921" y1="2.286" x2="3.429" y2="3.302" layer="51"/>
 <rectangle x1="4.191" y1="2.286" x2="4.699" y2="3.302" layer="51"/>
+<circle x="-5.637803125" y="-2.8887" radius="0.381" width="0" layer="21"/>
 </package>
 <package name="DIODE-ZENER">
 <wire x1="-1.778" y1="0.762" x2="1.778" y2="0.762" width="0.2032" layer="21"/>
@@ -2198,7 +2219,7 @@ Production Part - 8199
 </part>
 <part name="U$6" library="GW-devices" deviceset="RF-R" device="0805" value="10k">
 <attribute name="MFGN" value="Vishay Dale"/>
-<attribute name="MFGP" value="CRCW080568K0FKEA"/>
+<attribute name="MFGP" value="CRCW080510K0FKEA"/>
 </part>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="U$7" library="GW-devices" deviceset="RF-C" device="0805" value="0.1uF">
@@ -2215,7 +2236,7 @@ Production Part - 8199
 </part>
 <part name="U$25" library="GW-devices" deviceset="RF-R" device="0805" value="10k">
 <attribute name="MFGN" value="Vishay Dale"/>
-<attribute name="MFGP" value="CRCW080568K0FKEA"/>
+<attribute name="MFGP" value="CRCW080510K0FKEA"/>
 </part>
 <part name="U$26" library="GW-devices" deviceset="RF-R" device="0805" value="10k">
 <attribute name="MFGN" value="Vishay Dale"/>
@@ -2681,7 +2702,8 @@ Production Part - 8199
 <wire x1="-373.38" y1="167.64" x2="-368.3" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="-406.4" y1="134.62" x2="-406.4" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="-406.4" y1="132.08" x2="-368.3" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-406.4" y1="132.08" x2="-386.08" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-386.08" y1="132.08" x2="-368.3" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-368.3" y1="132.08" x2="-368.3" y2="162.56" width="0.1524" layer="91"/>
 <junction x="-368.3" y="162.56"/>
 <junction x="-368.3" y="167.64"/>
@@ -2691,6 +2713,10 @@ Production Part - 8199
 <pinref part="U$21" gate="G$1" pin="2"/>
 <pinref part="U$22" gate="G$1" pin="2"/>
 <pinref part="U$23" gate="G$1" pin="2"/>
+<pinref part="U2" gate="G$1" pin="R2IN"/>
+<wire x1="-388.62" y1="142.24" x2="-386.08" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-386.08" y1="142.24" x2="-386.08" y2="132.08" width="0.1524" layer="91"/>
+<junction x="-386.08" y="132.08"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="GND2"/>
@@ -3308,6 +3334,15 @@ Production Part - 8199
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,-137.16,190.5,OUT,OUT1,,,,"/>
+<approved hash="202,1,-276.86,170.18,U$13,3,,,,"/>
+<approved hash="202,1,-266.7,157.48,U$14,3,,,,"/>
+<approved hash="202,1,-256.54,144.78,U$15,3,,,,"/>
+<approved hash="202,1,-243.84,132.08,U$16,3,,,,"/>
+<approved hash="113,1,-42.7355,143.51,U$2,,,,,"/>
+<approved hash="113,1,-127,187.621,IC1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
