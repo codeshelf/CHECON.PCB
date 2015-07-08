@@ -574,6 +574,53 @@ Source: www.xicor.com .. x1205.pdf</description>
 <wire x1="5.9" y1="-0.3" x2="5.5" y2="-0.3" width="0.127" layer="48"/>
 <circle x="-5.8" y="-0.7" radius="0.15" width="0" layer="48"/>
 </package>
+<package name="DCN-R-PDSO-G8">
+<description>&lt;b&gt;DCN (R-PDSO-G8) PLASTIC SMALL-OUTLINE PACKAGE (DIE DOWN)&lt;/b&gt;&lt;p&gt;
+Source: tps62120.pdf (www.ti.com)</description>
+<smd name="1" x="-0.975" y="-1.35" dx="0.45" dy="0.8" layer="1" stop="no" cream="no"/>
+<smd name="2" x="-0.325" y="-1.35" dx="0.45" dy="0.8" layer="1" stop="no" cream="no"/>
+<smd name="3" x="0.325" y="-1.35" dx="0.45" dy="0.8" layer="1" stop="no" cream="no"/>
+<smd name="4" x="0.975" y="-1.35" dx="0.45" dy="0.8" layer="1" stop="no" cream="no"/>
+<rectangle x1="-1.225" y1="-1.825" x2="-0.725" y2="-0.875" layer="29"/>
+<rectangle x1="-1.175" y1="-1.725" x2="-0.775" y2="-0.975" layer="31"/>
+<rectangle x1="-0.575" y1="-1.825" x2="-0.075" y2="-0.875" layer="29"/>
+<rectangle x1="-0.525" y1="-1.725" x2="-0.125" y2="-0.975" layer="31"/>
+<rectangle x1="0.075" y1="-1.825" x2="0.575" y2="-0.875" layer="29"/>
+<rectangle x1="0.125" y1="-1.725" x2="0.525" y2="-0.975" layer="31"/>
+<rectangle x1="0.725" y1="-1.825" x2="1.225" y2="-0.875" layer="29"/>
+<rectangle x1="0.775" y1="-1.725" x2="1.175" y2="-0.975" layer="31"/>
+<smd name="5" x="0.975" y="1.35" dx="0.45" dy="0.8" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="6" x="0.325" y="1.35" dx="0.45" dy="0.8" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="7" x="-0.325" y="1.35" dx="0.45" dy="0.8" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="8" x="-0.975" y="1.35" dx="0.45" dy="0.8" layer="1" rot="R180" stop="no" cream="no"/>
+<rectangle x1="0.725" y1="0.875" x2="1.225" y2="1.825" layer="29" rot="R180"/>
+<rectangle x1="0.775" y1="0.975" x2="1.175" y2="1.725" layer="31" rot="R180"/>
+<rectangle x1="0.075" y1="0.875" x2="0.575" y2="1.825" layer="29" rot="R180"/>
+<rectangle x1="0.125" y1="0.975" x2="0.525" y2="1.725" layer="31" rot="R180"/>
+<rectangle x1="-0.575" y1="0.875" x2="-0.075" y2="1.825" layer="29" rot="R180"/>
+<rectangle x1="-0.525" y1="0.975" x2="-0.125" y2="1.725" layer="31" rot="R180"/>
+<rectangle x1="-1.225" y1="0.875" x2="-0.725" y2="1.825" layer="29" rot="R180"/>
+<rectangle x1="-1.175" y1="0.975" x2="-0.775" y2="1.725" layer="31" rot="R180"/>
+<rectangle x1="-1.15" y1="-1.5" x2="-0.8" y2="-0.825" layer="51"/>
+<wire x1="-1.4" y1="0.775" x2="1.4" y2="0.775" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.775" x2="1.4" y2="-0.775" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-0.775" x2="-1.4" y2="-0.775" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="-0.775" x2="-1.4" y2="0.775" width="0.2032" layer="21"/>
+<rectangle x1="-1.4" y1="-0.75" x2="0" y2="0" layer="21"/>
+<rectangle x1="-0.5" y1="-1.5" x2="-0.15" y2="-0.825" layer="51"/>
+<rectangle x1="0.15" y1="-1.5" x2="0.5" y2="-0.825" layer="51"/>
+<rectangle x1="0.8" y1="-1.5" x2="1.15" y2="-0.825" layer="51"/>
+<rectangle x1="0.725" y1="0.875" x2="1.225" y2="1.825" layer="29" rot="R180"/>
+<rectangle x1="0.075" y1="0.875" x2="0.575" y2="1.825" layer="29" rot="R180"/>
+<rectangle x1="-0.575" y1="0.875" x2="-0.075" y2="1.825" layer="29" rot="R180"/>
+<rectangle x1="-1.225" y1="0.875" x2="-0.725" y2="1.825" layer="29" rot="R180"/>
+<rectangle x1="0.8" y1="0.825" x2="1.15" y2="1.5" layer="51" rot="R180"/>
+<rectangle x1="0.15" y1="0.825" x2="0.5" y2="1.5" layer="51" rot="R180"/>
+<rectangle x1="-0.5" y1="0.825" x2="-0.15" y2="1.5" layer="51" rot="R180"/>
+<rectangle x1="-1.15" y1="0.825" x2="-0.8" y2="1.5" layer="51" rot="R180"/>
+<text x="-1.6" y="-1.775" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.9" y="-1.75" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BARREL_CUI_PJ-002A">
@@ -860,6 +907,20 @@ P40- VIN</text>
 <wire x1="10.16" y1="2.54" x2="-10.16" y2="2.54" width="0.254" layer="97"/>
 <wire x1="-10.16" y1="2.54" x2="-10.16" y2="-2.54" width="0.254" layer="97"/>
 </symbol>
+<symbol name="INA219B">
+<pin name="VIN+" x="-7.62" y="5.08" length="middle"/>
+<pin name="VIN-" x="-7.62" y="0" length="middle"/>
+<pin name="GND" x="-7.62" y="-5.08" length="middle"/>
+<pin name="VS" x="-7.62" y="-10.16" length="middle"/>
+<pin name="SCL" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="SDA" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="A0" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="A1" x="17.78" y="5.08" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-12.7" width="0.254" layer="97"/>
+<wire x1="-5.08" y1="-12.7" x2="15.24" y2="-12.7" width="0.254" layer="97"/>
+<wire x1="15.24" y1="-12.7" x2="15.24" y2="7.62" width="0.254" layer="97"/>
+<wire x1="15.24" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="97"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BARREL_CUI_PJ-002A">
@@ -1058,16 +1119,16 @@ P40- VIN</text>
 <devices>
 <device name="" package="52745-1097">
 <connects>
-<connect gate="G$1" pin="DISP" pad="P$5"/>
-<connect gate="G$1" pin="EXCOMIN" pad="P$4"/>
-<connect gate="G$1" pin="EXTMODE" pad="P$8"/>
-<connect gate="G$1" pin="SCLK" pad="P$1"/>
-<connect gate="G$1" pin="SCS" pad="P$3"/>
-<connect gate="G$1" pin="SI" pad="P$2"/>
-<connect gate="G$1" pin="VDD" pad="P$7"/>
-<connect gate="G$1" pin="VDDA" pad="P$6"/>
-<connect gate="G$1" pin="VSS" pad="P$9"/>
-<connect gate="G$1" pin="VSSA" pad="P$10"/>
+<connect gate="G$1" pin="DISP" pad="P$6"/>
+<connect gate="G$1" pin="EXCOMIN" pad="P$7"/>
+<connect gate="G$1" pin="EXTMODE" pad="P$3"/>
+<connect gate="G$1" pin="SCLK" pad="P$10"/>
+<connect gate="G$1" pin="SCS" pad="P$8"/>
+<connect gate="G$1" pin="SI" pad="P$9"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+<connect gate="G$1" pin="VDDA" pad="P$5"/>
+<connect gate="G$1" pin="VSS" pad="P$2"/>
+<connect gate="G$1" pin="VSSA" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1164,7 +1225,10 @@ P40- VIN</text>
 <connect gate="G$1" pin="VDD" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFGN" value="NXP"/>
+<attribute name="MFGP" value="PCA9632DP1"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1184,7 +1248,10 @@ P40- VIN</text>
 <connect gate="G$1" pin="SW" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFGN" value="Semtech"/>
+<attribute name="MFGP" value="SC4541"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1218,7 +1285,35 @@ P40- VIN</text>
 <connect gate="G$1" pin="GND" pad="P$4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFGN" value="AVX"/>
+<attribute name="MFGP" value="009155004301006"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INA219B">
+<gates>
+<gate name="G$1" symbol="INA219B" x="-5.08" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="DCN-R-PDSO-G8">
+<connects>
+<connect gate="G$1" pin="A0" pad="7"/>
+<connect gate="G$1" pin="A1" pad="8"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="SCL" pad="5"/>
+<connect gate="G$1" pin="SDA" pad="6"/>
+<connect gate="G$1" pin="VIN+" pad="1"/>
+<connect gate="G$1" pin="VIN-" pad="2"/>
+<connect gate="G$1" pin="VS" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFGN" value="Texas Instruments"/>
+<attribute name="MFGP" value="INA219B"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2423,99 +2518,6 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 </deviceset>
 </devicesets>
 </library>
-<library name="texas">
-<description>&lt;b&gt;Texas Instruments Devices&lt;/b&gt;&lt;p&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="DCN-R-PDSO-G8">
-<description>&lt;b&gt;DCN (R-PDSO-G8) PLASTIC SMALL-OUTLINE PACKAGE (DIE DOWN)&lt;/b&gt;&lt;p&gt;
-Source: tps62120.pdf (www.ti.com)</description>
-<smd name="1" x="-0.975" y="-1.35" dx="0.45" dy="0.8" layer="1" stop="no" cream="no"/>
-<smd name="2" x="-0.325" y="-1.35" dx="0.45" dy="0.8" layer="1" stop="no" cream="no"/>
-<smd name="3" x="0.325" y="-1.35" dx="0.45" dy="0.8" layer="1" stop="no" cream="no"/>
-<smd name="4" x="0.975" y="-1.35" dx="0.45" dy="0.8" layer="1" stop="no" cream="no"/>
-<rectangle x1="-1.225" y1="-1.825" x2="-0.725" y2="-0.875" layer="29"/>
-<rectangle x1="-1.175" y1="-1.725" x2="-0.775" y2="-0.975" layer="31"/>
-<rectangle x1="-0.575" y1="-1.825" x2="-0.075" y2="-0.875" layer="29"/>
-<rectangle x1="-0.525" y1="-1.725" x2="-0.125" y2="-0.975" layer="31"/>
-<rectangle x1="0.075" y1="-1.825" x2="0.575" y2="-0.875" layer="29"/>
-<rectangle x1="0.125" y1="-1.725" x2="0.525" y2="-0.975" layer="31"/>
-<rectangle x1="0.725" y1="-1.825" x2="1.225" y2="-0.875" layer="29"/>
-<rectangle x1="0.775" y1="-1.725" x2="1.175" y2="-0.975" layer="31"/>
-<smd name="5" x="0.975" y="1.35" dx="0.45" dy="0.8" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="6" x="0.325" y="1.35" dx="0.45" dy="0.8" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="7" x="-0.325" y="1.35" dx="0.45" dy="0.8" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="8" x="-0.975" y="1.35" dx="0.45" dy="0.8" layer="1" rot="R180" stop="no" cream="no"/>
-<rectangle x1="0.725" y1="0.875" x2="1.225" y2="1.825" layer="29" rot="R180"/>
-<rectangle x1="0.775" y1="0.975" x2="1.175" y2="1.725" layer="31" rot="R180"/>
-<rectangle x1="0.075" y1="0.875" x2="0.575" y2="1.825" layer="29" rot="R180"/>
-<rectangle x1="0.125" y1="0.975" x2="0.525" y2="1.725" layer="31" rot="R180"/>
-<rectangle x1="-0.575" y1="0.875" x2="-0.075" y2="1.825" layer="29" rot="R180"/>
-<rectangle x1="-0.525" y1="0.975" x2="-0.125" y2="1.725" layer="31" rot="R180"/>
-<rectangle x1="-1.225" y1="0.875" x2="-0.725" y2="1.825" layer="29" rot="R180"/>
-<rectangle x1="-1.175" y1="0.975" x2="-0.775" y2="1.725" layer="31" rot="R180"/>
-<rectangle x1="-1.15" y1="-1.5" x2="-0.8" y2="-0.825" layer="51"/>
-<wire x1="-1.4" y1="0.775" x2="1.4" y2="0.775" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.775" x2="1.4" y2="-0.775" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="-0.775" x2="-1.4" y2="-0.775" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="-0.775" x2="-1.4" y2="0.775" width="0.2032" layer="21"/>
-<rectangle x1="-1.4" y1="-0.75" x2="0" y2="0" layer="21"/>
-<rectangle x1="-0.5" y1="-1.5" x2="-0.15" y2="-0.825" layer="51"/>
-<rectangle x1="0.15" y1="-1.5" x2="0.5" y2="-0.825" layer="51"/>
-<rectangle x1="0.8" y1="-1.5" x2="1.15" y2="-0.825" layer="51"/>
-<rectangle x1="0.725" y1="0.875" x2="1.225" y2="1.825" layer="29" rot="R180"/>
-<rectangle x1="0.075" y1="0.875" x2="0.575" y2="1.825" layer="29" rot="R180"/>
-<rectangle x1="-0.575" y1="0.875" x2="-0.075" y2="1.825" layer="29" rot="R180"/>
-<rectangle x1="-1.225" y1="0.875" x2="-0.725" y2="1.825" layer="29" rot="R180"/>
-<rectangle x1="0.8" y1="0.825" x2="1.15" y2="1.5" layer="51" rot="R180"/>
-<rectangle x1="0.15" y1="0.825" x2="0.5" y2="1.5" layer="51" rot="R180"/>
-<rectangle x1="-0.5" y1="0.825" x2="-0.15" y2="1.5" layer="51" rot="R180"/>
-<rectangle x1="-1.15" y1="0.825" x2="-0.8" y2="1.5" layer="51" rot="R180"/>
-<text x="-1.6" y="-1.775" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="2.9" y="-1.75" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="INA219B">
-<pin name="VIN+" x="-7.62" y="5.08" length="middle"/>
-<pin name="VIN-" x="-7.62" y="0" length="middle"/>
-<pin name="GND" x="-7.62" y="-5.08" length="middle"/>
-<pin name="VS" x="-7.62" y="-10.16" length="middle"/>
-<pin name="SCL" x="17.78" y="-10.16" length="middle" rot="R180"/>
-<pin name="SDA" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="A0" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="A1" x="17.78" y="5.08" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-12.7" width="0.254" layer="97"/>
-<wire x1="-5.08" y1="-12.7" x2="15.24" y2="-12.7" width="0.254" layer="97"/>
-<wire x1="15.24" y1="-12.7" x2="15.24" y2="7.62" width="0.254" layer="97"/>
-<wire x1="15.24" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="97"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="INA219B">
-<gates>
-<gate name="G$1" symbol="INA219B" x="-5.08" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="DCN-R-PDSO-G8">
-<connects>
-<connect gate="G$1" pin="A0" pad="7"/>
-<connect gate="G$1" pin="A1" pad="8"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="SCL" pad="5"/>
-<connect gate="G$1" pin="SDA" pad="6"/>
-<connect gate="G$1" pin="VIN+" pad="1"/>
-<connect gate="G$1" pin="VIN-" pad="2"/>
-<connect gate="G$1" pin="VS" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2718,9 +2720,18 @@ Source: tps62120.pdf (www.ti.com)</description>
 </part>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="U$47" library="KW2" deviceset="1212_IND" device=""/>
-<part name="LQH3NPN100NM0L" library="KW2" deviceset="1212_IND" device=""/>
-<part name="U$49" library="KW2" deviceset="1212_IND" device=""/>
+<part name="U$47" library="KW2" deviceset="1212_IND" device="">
+<attribute name="MFGN" value="Murata"/>
+<attribute name="MFGP" value="LQH3NPN100NM0L"/>
+</part>
+<part name="LQH3NPN100NM0L" library="KW2" deviceset="1212_IND" device="">
+<attribute name="MFGN" value="Murata"/>
+<attribute name="MFGP" value="LQH3NPN100NM0L"/>
+</part>
+<part name="U$49" library="KW2" deviceset="1212_IND" device="">
+<attribute name="MFGN" value="Murata"/>
+<attribute name="MFGP" value="LQH3NPN100NM0L"/>
+</part>
 <part name="U$50" library="GW-devices" deviceset="RF-C" device="0805" value="1uF">
 <attribute name="MFGN" value="TDK"/>
 <attribute name="MFGP" value="C2012X5R1E105K125AA"/>
@@ -2745,17 +2756,17 @@ Source: tps62120.pdf (www.ti.com)</description>
 <attribute name="MFGN" value="TDK"/>
 <attribute name="MFGP" value="C2012X5R1E105K125AA"/>
 </part>
-<part name="U$56" library="GW-devices" deviceset="RF-R" device="0805" value="6.6">
-<attribute name="MFGN" value="Vishay Dale"/>
-<attribute name="MFGP" value="CRCW080510K0FKEA"/>
+<part name="U$56" library="GW-devices" deviceset="RF-R" device="0805" value="6.8">
+<attribute name="MFGN" value="Yageo"/>
+<attribute name="MFGP" value="RC0805FR-076R8L"/>
 </part>
 <part name="U$57" library="GW-devices" deviceset="RF-R" device="0805" value="3.3">
-<attribute name="MFGN" value="Vishay Dale"/>
-<attribute name="MFGP" value="CRCW080510K0FKEA"/>
+<attribute name="MFGN" value="Samsung"/>
+<attribute name="MFGP" value="RC2012F3R3CS"/>
 </part>
 <part name="U$58" library="GW-devices" deviceset="RF-R" device="0805" value="3.3">
-<attribute name="MFGN" value="Vishay Dale"/>
-<attribute name="MFGP" value="CRCW080510K0FKEA"/>
+<attribute name="MFGN" value="Samsung"/>
+<attribute name="MFGP" value="RC2012F3R3CS"/>
 </part>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
@@ -2770,16 +2781,16 @@ Source: tps62120.pdf (www.ti.com)</description>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$60" library="GW-devices" deviceset="RF-R" device="0805" value="4.7k">
-<attribute name="MFGN" value="Vishay Dale"/>
-<attribute name="MFGP" value="CRCW080510K0FKEA"/>
+<attribute name="MFGN" value="Panasonic"/>
+<attribute name="MFGP" value="ERJ-6ENF4701V"/>
 </part>
 <part name="U$61" library="GW-devices" deviceset="RF-R" device="0805" value="4.7k">
-<attribute name="MFGN" value="Vishay Dale"/>
-<attribute name="MFGP" value="CRCW080510K0FKEA"/>
+<attribute name="MFGN" value="Panasonic"/>
+<attribute name="MFGP" value="ERJ-6ENF4701V"/>
 </part>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="R10" library="GW-devices" deviceset="RF-R" device="2512"/>
-<part name="U$62" library="texas" deviceset="INA219B" device=""/>
+<part name="U$62" library="KW2" deviceset="INA219B" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="R12" library="GW-devices" deviceset="RF-R" device="0805" value="10"/>
@@ -2823,7 +2834,7 @@ Source: tps62120.pdf (www.ti.com)</description>
 <instance part="U$3" gate="G$1" x="-96.52" y="99.06" rot="MR180"/>
 <instance part="+3V7" gate="G$1" x="-73.66" y="114.3"/>
 <instance part="GND3" gate="1" x="-50.8" y="231.14"/>
-<instance part="SUPPLY1" gate="1" x="-60.96" y="238.76"/>
+<instance part="SUPPLY1" gate="1" x="-101.6" y="246.38"/>
 <instance part="+3V1" gate="G$1" x="-195.58" y="149.86"/>
 <instance part="GND7" gate="1" x="-149.86" y="86.36"/>
 <instance part="GND1" gate="1" x="-208.28" y="86.36"/>
@@ -2985,9 +2996,18 @@ Source: tps62120.pdf (www.ti.com)</description>
 </instance>
 <instance part="GND19" gate="1" x="-129.54" y="10.16"/>
 <instance part="GND20" gate="1" x="-91.44" y="-5.08"/>
-<instance part="U$47" gate="G$1" x="-198.12" y="0" rot="R180"/>
-<instance part="LQH3NPN100NM0L" gate="G$1" x="-198.12" y="38.1" rot="R180"/>
-<instance part="U$49" gate="G$1" x="-195.58" y="-38.1" rot="R180"/>
+<instance part="U$47" gate="G$1" x="-198.12" y="0" rot="R180">
+<attribute name="MFGN" x="-198.12" y="0" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFGP" x="-198.12" y="0" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="LQH3NPN100NM0L" gate="G$1" x="-198.12" y="38.1" rot="R180">
+<attribute name="MFGN" x="-198.12" y="38.1" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFGP" x="-198.12" y="38.1" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U$49" gate="G$1" x="-195.58" y="-38.1" rot="R180">
+<attribute name="MFGN" x="-195.58" y="-38.1" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFGP" x="-195.58" y="-38.1" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="U$50" gate="G$1" x="-187.96" y="2.54" rot="R180">
 <attribute name="MFGP" x="-187.96" y="2.54" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MFGN" x="-187.96" y="2.54" size="1.778" layer="96" rot="R180" display="off"/>
@@ -3533,32 +3553,6 @@ Source: tps62120.pdf (www.ti.com)</description>
 </net>
 <net name="V+" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="PWR"/>
-<wire x1="-45.72" y1="226.06" x2="-40.64" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="U$35" gate="G$1" pin="2"/>
-<junction x="-45.72" y="226.06"/>
-<pinref part="SUPPLY1" gate="1" pin="V+"/>
-<wire x1="-60.96" y1="236.22" x2="-60.96" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="233.68" x2="-60.96" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="226.06" x2="-55.88" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="U$33" gate="G$1" pin="2"/>
-<junction x="-55.88" y="226.06"/>
-<wire x1="-55.88" y1="226.06" x2="-50.8" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="226.06" x2="-45.72" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="U$34" gate="G$1" pin="2"/>
-<junction x="-50.8" y="226.06"/>
-<wire x1="-60.96" y1="233.68" x2="-68.58" y2="233.68" width="0.1524" layer="91"/>
-<junction x="-60.96" y="233.68"/>
-<wire x1="-68.58" y1="233.68" x2="-71.12" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="233.68" x2="-71.12" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="R10" gate="&gt;NAME" pin="1"/>
-<wire x1="-81.28" y1="241.3" x2="-76.2" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="R12" gate="&gt;NAME" pin="2"/>
-<wire x1="-76.2" y1="241.3" x2="-76.2" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="241.3" x2="-76.2" y2="241.3" width="0.1524" layer="91"/>
-<junction x="-76.2" y="241.3"/>
-</segment>
-<segment>
 <pinref part="SUPPLY4" gate="1" pin="V+"/>
 <wire x1="-335.28" y1="91.44" x2="-335.28" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="VIN"/>
@@ -3612,6 +3606,23 @@ Source: tps62120.pdf (www.ti.com)</description>
 <wire x1="-210.82" y1="190.5" x2="-220.98" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="-220.98" y1="190.5" x2="-220.98" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="1" pin="V+"/>
+</segment>
+<segment>
+<pinref part="U$31" gate="G$1" pin="2"/>
+<pinref part="IC1" gate="G$1" pin="IN"/>
+<wire x1="-116.84" y1="238.76" x2="-111.76" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="R10" gate="&gt;NAME" pin="2"/>
+<pinref part="R13" gate="&gt;NAME" pin="2"/>
+<wire x1="-93.98" y1="241.3" x2="-91.44" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="241.3" x2="-93.98" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="238.76" x2="-93.98" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="238.76" x2="-101.6" y2="238.76" width="0.1524" layer="91"/>
+<junction x="-111.76" y="238.76"/>
+<junction x="-93.98" y="238.76"/>
+<pinref part="SUPPLY1" gate="1" pin="V+"/>
+<wire x1="-101.6" y1="238.76" x2="-93.98" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="243.84" x2="-101.6" y2="238.76" width="0.1524" layer="91"/>
+<junction x="-101.6" y="238.76"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -4201,19 +4212,29 @@ Source: tps62120.pdf (www.ti.com)</description>
 <junction x="-93.98" y="220.98"/>
 </segment>
 </net>
-<net name="N$58" class="0">
+<net name="N$49" class="0">
 <segment>
-<pinref part="U$31" gate="G$1" pin="2"/>
-<pinref part="IC1" gate="G$1" pin="IN"/>
-<wire x1="-116.84" y1="238.76" x2="-111.76" y2="238.76" width="0.1524" layer="91"/>
-<pinref part="R10" gate="&gt;NAME" pin="2"/>
-<pinref part="R13" gate="&gt;NAME" pin="2"/>
-<wire x1="-93.98" y1="241.3" x2="-91.44" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="241.3" x2="-93.98" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="238.76" x2="-93.98" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="238.76" x2="-93.98" y2="238.76" width="0.1524" layer="91"/>
-<junction x="-111.76" y="238.76"/>
-<junction x="-93.98" y="238.76"/>
+<pinref part="U$9" gate="G$1" pin="PWR"/>
+<wire x1="-45.72" y1="226.06" x2="-40.64" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="U$35" gate="G$1" pin="2"/>
+<junction x="-45.72" y="226.06"/>
+<wire x1="-60.96" y1="233.68" x2="-60.96" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="226.06" x2="-55.88" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="U$33" gate="G$1" pin="2"/>
+<junction x="-55.88" y="226.06"/>
+<wire x1="-55.88" y1="226.06" x2="-50.8" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="226.06" x2="-45.72" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="U$34" gate="G$1" pin="2"/>
+<junction x="-50.8" y="226.06"/>
+<wire x1="-60.96" y1="233.68" x2="-68.58" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="233.68" x2="-71.12" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="233.68" x2="-71.12" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="R10" gate="&gt;NAME" pin="1"/>
+<wire x1="-81.28" y1="241.3" x2="-76.2" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="R12" gate="&gt;NAME" pin="2"/>
+<wire x1="-76.2" y1="241.3" x2="-76.2" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="241.3" x2="-76.2" y2="241.3" width="0.1524" layer="91"/>
+<junction x="-76.2" y="241.3"/>
 </segment>
 </net>
 </nets>
