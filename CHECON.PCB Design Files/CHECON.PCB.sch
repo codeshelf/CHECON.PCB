@@ -2798,6 +2798,10 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <part name="C11" library="GW-devices" deviceset="RF-C" device="0805" value="0.1uF"/>
 <part name="C14" library="GW-devices" deviceset="RF-C" device="0805" value="0.1uF"/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
+<part name="U$48" library="GW-devices" deviceset="RF-R" device="0805" value="120">
+<attribute name="MFGN" value="Panasonic"/>
+<attribute name="MFGP" value="ERJ-6ENF4701V"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -3074,6 +3078,10 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <instance part="C11" gate="G$1" x="-83.82" y="220.98" rot="MR90"/>
 <instance part="C14" gate="G$1" x="-71.12" y="180.34" rot="MR270"/>
 <instance part="GND29" gate="1" x="-114.3" y="195.58" rot="MR0"/>
+<instance part="U$48" gate="&gt;NAME" x="-309.118" y="59.436" rot="R270">
+<attribute name="MFGP" x="-309.118" y="59.436" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFGN" x="-309.118" y="59.436" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3654,20 +3662,6 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <wire x1="-190.5" y1="134.62" x2="-215.9" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="B"/>
-<pinref part="POSCON" gate="G$1" pin="4"/>
-<wire x1="-320.04" y1="60.96" x2="-294.64" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="A"/>
-<pinref part="POSCON" gate="G$1" pin="5"/>
-<wire x1="-320.04" y1="58.42" x2="-294.64" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$18" class="0">
 <segment>
 <wire x1="-424.18" y1="165.1" x2="-429.26" y2="165.1" width="0.1524" layer="91"/>
@@ -4235,6 +4229,34 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <wire x1="-76.2" y1="241.3" x2="-76.2" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="241.3" x2="-76.2" y2="241.3" width="0.1524" layer="91"/>
 <junction x="-76.2" y="241.3"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="B"/>
+<wire x1="-320.04" y1="60.96" x2="-312.42" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="60.96" x2="-312.42" y2="64.516" width="0.1524" layer="91"/>
+<pinref part="U$48" gate="&gt;NAME" pin="1"/>
+<wire x1="-312.42" y1="64.516" x2="-309.118" y2="64.516" width="0.1524" layer="91"/>
+<wire x1="-309.118" y1="64.516" x2="-305.816" y2="64.516" width="0.1524" layer="91"/>
+<junction x="-309.118" y="64.516"/>
+<wire x1="-305.816" y1="64.516" x2="-305.816" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="POSCON" gate="G$1" pin="4"/>
+<wire x1="-305.816" y1="60.96" x2="-294.64" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="A"/>
+<wire x1="-320.04" y1="58.42" x2="-312.42" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="58.42" x2="-312.42" y2="54.356" width="0.1524" layer="91"/>
+<pinref part="U$48" gate="&gt;NAME" pin="2"/>
+<wire x1="-312.42" y1="54.356" x2="-309.118" y2="54.356" width="0.1524" layer="91"/>
+<pinref part="POSCON" gate="G$1" pin="5"/>
+<wire x1="-294.64" y1="58.42" x2="-305.562" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-305.562" y1="58.42" x2="-305.562" y2="54.356" width="0.1524" layer="91"/>
+<wire x1="-305.562" y1="54.356" x2="-309.118" y2="54.356" width="0.1524" layer="91"/>
+<junction x="-309.118" y="54.356"/>
 </segment>
 </net>
 </nets>
