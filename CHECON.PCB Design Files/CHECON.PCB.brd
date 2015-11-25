@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -162,7 +162,7 @@
 <wire x1="-30.8356" y1="25.8318" x2="-26.8224" y2="25.8318" width="0.0254" layer="20" curve="180"/>
 <wire x1="-40.2336" y1="24.4602" x2="-39.461509375" y2="25.228940625" width="0.0254" layer="20" curve="42.714891"/>
 <wire x1="-38.5318" y1="25.8318" x2="-39.453315625" y2="25.2252625" width="0.0254" layer="20" curve="66.705498"/>
-<text x="-9.8096" y="22.2722" size="1.4224" layer="50" font="vector" ratio="15">CHECON.PCB.v1.1P1</text>
+<text x="-14.6864" y="22.831" size="1.4224" layer="50" font="vector" ratio="15">CHECON_2.7.PCB.v1.1P2</text>
 <rectangle x1="7.00913125" y1="13.5340375" x2="7.34695" y2="13.5518125" layer="21" rot="R180"/>
 <rectangle x1="-9.241790625" y1="13.5340375" x2="-8.903971875" y2="13.5518125" layer="21" rot="R180"/>
 <rectangle x1="6.95579375" y1="13.551815625" x2="7.41806875" y2="13.569596875" layer="21" rot="R180"/>
@@ -2249,7 +2249,7 @@
 <rectangle x1="8.538209375" y1="19.7570375" x2="9.231628125" y2="19.7748125" layer="21" rot="R180"/>
 <rectangle x1="8.627109375" y1="19.774815625" x2="9.231628125" y2="19.792596875" layer="21" rot="R180"/>
 <rectangle x1="8.733790625" y1="19.792596875" x2="9.089390625" y2="19.810371875" layer="21" rot="R180"/>
-<text x="-0.60538125" y="20.615559375" size="1.016" layer="50" font="vector" ratio="15" rot="SR0">R.S 9/30/15</text>
+<text x="-0.83398125" y="20.564759375" size="1.016" layer="50" font="vector" ratio="15" rot="SR0">R.S 11/24/15</text>
 </plain>
 <libraries>
 <library name="KW2">
@@ -3648,18 +3648,6 @@ design rules under a new name.</description>
 <wire x1="13.9446" y1="-9.4742" x2="11.9634" y2="-7.493" width="0.3048" layer="1"/>
 <wire x1="11.9634" y1="-7.493" x2="9.8552" y2="-7.493" width="0.3048" layer="1"/>
 <wire x1="9.8552" y1="-7.493" x2="8.7884" y2="-6.4262" width="0.3048" layer="1"/>
-<polygon width="0.4064" layer="16">
-<vertex x="-42.7736" y="26.1366"/>
-<vertex x="41.7068" y="26.1366"/>
-<vertex x="41.7068" y="-26.8986"/>
-<vertex x="-42.7736" y="-26.8986"/>
-</polygon>
-<polygon width="0.4064" layer="1">
-<vertex x="-41.1734" y="26.1112"/>
-<vertex x="41.3766" y="26.1112"/>
-<vertex x="41.3766" y="-26.797"/>
-<vertex x="-41.1734" y="-26.797"/>
-</polygon>
 <contactref element="U2" pad="8"/>
 <wire x1="8.7122" y1="9.1694" x2="8.1534" y2="9.7282" width="0.3048" layer="16"/>
 <wire x1="8.1534" y1="9.7282" x2="8.1534" y2="10.1346" width="0.3048" layer="16"/>
